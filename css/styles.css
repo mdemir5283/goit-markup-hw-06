@@ -35,6 +35,12 @@ ul {
 *::after {
   box-sizing: border-box;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 .our-skill-container {
   display: flex;
 }
@@ -110,11 +116,7 @@ h1 {
   letter-spacing: 0.06em;
   color: var(--primary-light-color);
 }
-.img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+
 .btn-service11:hover,
 :focus {
   color: var(--accent-blue);
