@@ -963,3 +963,31 @@ textarea {
   fill: currentColor;
   margin-left: 30px;
 }
+.input-name:hover + .icon-person-svg,
+.input-name:focus + .icon-person-svg {
+  fill: var(--accent-blue);
+}
+.chk-bx-svg:hover + .my-label > .my-checkbox-icon,
+.chk-bx-svg:focus + .my-label > .my-checkbox-icon,
+.my-input-checkbox:checked + .my-label > .my-checkbox-icon {
+  fill: var(--white-text-color);
+  background-color: var(--active-and-hover-color);
+  border: 2px solid var(--active-and-hover-color);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+
+.checkbox-icon {
+  fill: white;
+}
+.modal-checkbox:checked + .checkbox-text > .checkbox-icon-wrapper {
+  background-color: var(--accent-blue);
+  border: none;
+}
