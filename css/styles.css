@@ -798,6 +798,7 @@ a {
   transition: border var(--time) var(--time-function);
   outline: none;
   color: var(--primary-text-color);
+  resize: none;
 }
 .is-hidden {
   visibility: hidden;
@@ -830,15 +831,7 @@ a {
   color: var(--secondary-text-color);
   text-decoration: none;
 }
-.agree-to-terms-and-conditions,
-.terms-and-conditions {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-  text-decoration: none;
-}
+
 .submit-bttn-container {
   position: relative;
 }
@@ -990,4 +983,25 @@ textarea {
 .modal-checkbox:checked + .checkbox-text > .checkbox-icon-wrapper {
   background-color: var(--accent-blue);
   border: none;
+}
+.checkbox-icon-wrapper {
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-right: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-text {
+  display: flex;
 }
